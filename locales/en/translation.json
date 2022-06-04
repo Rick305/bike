@@ -1,0 +1,10 @@
+{
+    "from": "from",
+    "to": "to",
+    "convince": "convince me",
+    "title": "That's why you shloud take the bike",
+    "text": "Taking the bike is good for the environment, your health but also for your wallet! For this <1>{{distance}}</1> bike ride you will burn <3>{{calories}}</3>. And because you bikes dont have polution <5>{{co2}}</5> less CO2. On top of that you will save <7>€ {{money}}</7>!",
+    "new": "new route",
+    "processing": "Getting ready",
+    "error": "Oh no! An error has occurred."
+  }

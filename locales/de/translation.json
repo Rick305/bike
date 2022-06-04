@@ -1,0 +1,11 @@
+{
+  "from": "von",
+  "to": "nach",
+  "convince": "überzeuge mich",
+  "title": "Deiner Weg. Deine Entscheidung.",
+  "text": "Das Fahrrad ist nicht nur gut für die Umwelt und deine Gesundheit sonder auch für das Portomonee. Für deine <1>{{distance}}</1> Fahrrad strecke verbrennst du <3>{{calories}}</3>. Kein CO2 Ausstoß heißt <5>{{co2}}</5> weniger CO2 in der Luft. Da obendrauf sparst du <7>€ {{money}}</7> an Sprit!",
+  "new": "neue Berechnung",
+  "processing": "Nur noch kurz den Sattel stellen!",
+  "error": "Oh nein! Da ist etwas schief gelaufen."
+}
+
