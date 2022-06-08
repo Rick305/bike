@@ -1,3 +1,4 @@
+import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import Icon from './Icon';
 import Orange from './Orange';

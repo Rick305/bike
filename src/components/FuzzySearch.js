@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import tt from "@tomtom-international/web-sdk-services";
 import { useTranslation } from "react-i18next";

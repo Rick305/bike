@@ -1,12 +1,15 @@
 import { useContext, useEffect, useState } from "react";
 import LocaleContext from "../LocaleContext";
 import i18n from "../i18n";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 function ChangeLanguage () {
     const { locale } = useContext(LocaleContext);
     const [ bold, setBold ] = useState('');
 
     function changeLocale (l) {
+      console.log("id do smth")
         if (locale !== l) {
           i18n.changeLanguage(l);
         }
