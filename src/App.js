@@ -1,25 +1,15 @@
 import { useState } from "react";
-import { Suspense } from "react";
 import LocaleContext from "./LocaleContext";
 import i18n from './i18n';
-
 import React from 'react'
-// import ReactDOM from 'react-dom'
-
 import Search from "./components/Search";
 import Result from "./components/Result";
-// import Loading from "./components/Loading";
 import ChangeLanguage from "./components/ChangeLanguage";
-// import { useTranslation } from "react-i18next";
-
 
 function App() {
   // //Settings for i18n
   const [locale, setLocale] = useState(i18n.language);
   i18n.on('languageChanged', (lng) => setLocale(i18n.language));
-  
-
-  // const {ready} = useTranslation();
 
   const [showHome, setShowHome] = useState(true); //Toggle which page is shown
   const [location, setLocation] = useState(''); // Loacation from where to where
@@ -31,9 +21,6 @@ function App() {
   }
 
   return (
-  // <Suspense fallback={<div>Loading...</div>}>
-  
-
     <LocaleContext.Provider value={{locale, setLocale}}>
         <div className="App">
         
@@ -57,7 +44,6 @@ function App() {
           </div>
         </div>
     </LocaleContext.Provider>
-    // {/* </Suspense> */}
   );
 }
 
