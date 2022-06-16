@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import FuzzySearch from "./FuzzySearch";
-import useCalculateRoute from "./useCalculateRoute";
 import { useState } from "react";
-import tt from "@tomtom-international/web-sdk-services";
 import { useTranslation } from "react-i18next";
 
 
@@ -17,7 +14,7 @@ function Search({getLocation}) {
   const [destinationLongitude, setDestinationLongitude] = useState("");
 
   const getPosition = childdata => {
-    if(childdata.text == 'from'){
+    if(childdata.text === 'from'){
     setStartLatitude(childdata.lng);
     setStartLongitude(childdata.lat);
   } else {

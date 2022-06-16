@@ -9,7 +9,6 @@ function Icon(props) {
 
     const [icon, setIcon] = useState('');
     const [unit, setUnit] = useState('');
-    const [count, setCount] = useState(0);
 
     //determen whitch icon is to be set
     useEffect(() => {
@@ -30,18 +29,6 @@ function Icon(props) {
           console.log(`Error`);
       }
     }, []);
-
-    //count up animation for number under icon
-    // useEffect( () => {
-    //     let frame = 0;
-    //     const counter =  setInterval(() => {
-    //        frame++
-    //         setCount(frame);
-    //         if ( frame === parseInt(props.amount) ) {
-	// 			clearInterval(counter);
-	// 		}
-    //     }, 10)
-    // }, [])
       
     return (
 

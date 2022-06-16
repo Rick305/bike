@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import LocaleContext from "../LocaleContext";
 import i18n from "../i18n";
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 function ChangeLanguage () {
     const { locale } = useContext(LocaleContext);
@@ -16,7 +15,7 @@ function ChangeLanguage () {
       }
 
       useEffect(() => {
-        if (locale == 'en'){
+        if (locale === 'en'){
           setBold('en');
         } else {
           setBold('de');
@@ -34,13 +33,13 @@ function ChangeLanguage () {
         <div> 
           <span 
           tabindex="0" 
-          className={bold == 'en' ? 'font-bold' : 'font-normal'} 
+          className={bold === 'en' ? 'font-bold' : 'font-normal'} 
           onClick={() => changeLocale('en')} 
           onKeyDown={(e) => handleKeyDown(e,'en')}>EN </span> | 
 
           <span 
           tabindex="0" 
-          className={bold == 'de' ? 'font-bold' : 'font-normal'} 
+          className={bold === 'de' ? 'font-bold' : 'font-normal'} 
           onClick={() => changeLocale('de')} 
           onKeyDown={(e) => handleKeyDown(e,'de')}>  DE</span>
         </div>
